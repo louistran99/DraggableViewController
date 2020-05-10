@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DraggableViewController_Example' do
+  pod 'DraggableViewController', :path => '../'
+
+  target 'DraggableViewController_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
